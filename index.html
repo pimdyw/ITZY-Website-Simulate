@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>ITZY</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div id="header">
+        <div id="icon">
+            <a href="index.html">
+                <img src="/project/g05itzy/mainpage/icon_w.png">
+                </img>
+            </a>
+        </div>
+        <div class="menu">
+            <div id="open_btn" onclick="OpenNav()" type="button">
+                <img class="img_menu" src="/project/g05itzy/mainpage/menu_w.png">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar" id="navbar" style="height: 100%">
+        <div class="icon_bar">
+            <a href="/project/g05itzy/index.html">
+                <img src="/project/g05itzy/mainpage/icon.png">
+                </img>
+            </a>
+        </div>
+        <div onclick="OpenNav()" type="button">
+            <img class="img_menu_close" src="/project/g05itzy/mainpage/btn_siteMenu_close.png">
+        </div>
+        <div class="menu_list">
+            <a class="link_menu" href="/project/g05itzy/profile_itzy/profile.html"
+                style="text-decoration: none;">PROFILE</a>
+            <a class="link_menu" href="/project/g05itzy/Discography/P1.html"
+                style="text-decoration: none;">DISCOGRAPHY</a>
+            <a class="link_menu" href="" style="text-decoration: none;">GALLERY</a>
+            <a class="link_menu" href="/project/g05itzy/Video/Video0.html" style="text-decoration: none;">VIDEO</a>
+            <a class="link_menu" href="/project/g05itzy/Notice/Notice.html" style="text-decoration: none;">NOTICE</a>
+            <a class="link_menu" href="/project/g05itzy/schedule/index.html" style="text-decoration: none;">SCHEDULE</a>
+        </div>
+        <footer>
+            <ul class="contact">
+                <li>
+                    <img alt="ig" src="/project/g05itzy/mainpage/sns_instagram_b.png">
+                </li>
+                <li>
+                    <img alt="twitter" src="/project/g05itzy/mainpage/sns_twitter_b.png">
+                </li>
+                <li>
+                    <img alt="facebook" src="/project/g05itzy/mainpage/sns_facebook_b.png">
+                </li>
+                <li>
+                    <img alt="youtube" src="/project/g05itzy/mainpage/sns_youtube_b.png">
+                </li>
+                <li>
+                    <img alt="vlive" src="/project/g05itzy/mainpage/sns_vlive_b.png">
+                </li>
+                <li>
+                    <img alt="weibo" src="/project/g05itzy/mainpage/sns_weibo_b.png">
+                </li>
+                <li>
+                    <img alt="fans" src="/project/g05itzy/mainpage/sns_fans_b.png">
+                </li>
+                <li>
+                    <img alt="edm" src="/project/g05itzy/mainpage/sns_edm_b.png">
+                </li>
+            </ul>
+            <p class="copyright" style="color: black;">
+                Copyright ©
+                <span style="color: #009be6;">JYP</span>
+                ENTERTAINMENT Co., Ltd. All rights reserved.
+            </p>
+        </footer>
+    </nav>
+    <div id="video">
+        <div class="video_bg"></div>
+        <button id="close_vdo" onclick="CloseVideo()" type="button">
+            <img class="img_video_close" src="/project/g05itzy/mainpage/close_btn.png">
+        </button>
+        <iframe id="iframe" width="1150px" height="650px" src="https://www.youtube.com/embed/MjCZfZfucEc"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="container">
+        <div class="background"></div>
+        <div class="img_background"></div>
+        <div class="play">
+            <button id="open_vdo" class="video" onclick="OpenVideo()">
+                <div class="img_play">
+                    <img src="/project/g05itzy/mainpage/PLAY.png" style="width: 75px; height: 75px;">
+                </div>
+            </button>
+        </div>
+        <div class="right">
+            <div class="new_album">
+                <a id="al1" class="link_album_1" href="/project/g05itzy/Discography/inside1.html"
+                    style="text-decoration: none; color:white;">CRAZY IN
+                    LOVE</a>
+            </div>
+            <div class="new_album">
+                <a id="al2" class="link_album_2" href="/project/g05itzy/Discography/inside1.html"
+                    style="text-decoration: none; color:white;">
+                    LOCO
+                </a>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="notice">
+                <div class="head_notice">
+                    <a class="link_head_notice" href="/project/g05itzy/Notice/Notice.html"
+                        style="text-decoration: none; color:white;">NOTICE</a>
+                </div>
+                <br>
+                <div class="main_notice">
+                    <a class="link_main_notice" href="/project/g05itzy/Notice/notice_inside/notice_inside20.html"
+                        style="text-decoration: none; color:white;">
+                        ITZY "LOCO" BEHIND #12
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <ul class="contact">
+            <li>
+                <img alt="ig" src="/project/g05itzy/mainpage/sns_instagram.png">
+            </li>
+            <li>
+                <img alt="twitter" src="/project/g05itzy/mainpage/sns_twitter.png">
+            </li>
+            <li>
+                <img alt="facebook" src="/project/g05itzy/mainpage/sns_facebook.png">
+            </li>
+            <li>
+                <img alt="youtube" src="/project/g05itzy/mainpage/sns_youtube.png">
+            </li>
+            <li>
+                <img alt="vlive" src="/project/g05itzy/mainpage/sns_vlive.png">
+            </li>
+            <li>
+                <img alt="weibo" src="/project/g05itzy/mainpage/sns_weibo.png">
+            </li>
+            <li>
+                <img alt="fans" src="/project/g05itzy/mainpage/sns_fans.png">
+            </li>
+            <li>
+                <img alt="edm" src="/project/g05itzy/mainpage/sns_edm.png">
+            </li>
+        </ul>
+        <p class="copyright">
+            Copyright ©
+            <span style="color: #009be6;">JYP</span>
+            ENTERTAINMENT Co., Ltd. All rights reserved.
+        </p>
+    </footer>
+</body>
+<script src="navbar.js"></script>
+<script src="script.js"></script>
+
+</html>

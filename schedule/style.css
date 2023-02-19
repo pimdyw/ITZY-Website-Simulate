@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Open+Sans&family=Roboto:wght@700&display=swap');
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: transparent;
+    height: 120px;
+    z-index: 1000;
+}
+
+#icon{
+    display: inline-block;
+    margin-top: 48px;
+    margin-left:52px; 
+    transform: scale(0.85);
+}
+
+.right-line{
+    position: fixed;
+    width: 356px;
+    top: 400px;
+    text-align: center;
+    right: -75px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #333;
+    transform: rotate(90deg);
+    z-index: -10;
+}
+
+.line{
+    display: inline-block;
+    border: 1px solid black;
+    width: 140px;
+    margin: 0 20px;
+
+}
+
+
+.copyright{
+    position: relative;
+    width: 100%;
+    bottom: 45px;
+    margin-top: 10%;
+    right: 3%;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    z-index: 100;
+}
+
+.contact{
+    position: relative;
+    bottom: 40px;
+    left: -2%;
+    z-index: 100;
+}
+.contact li{
+    width: 50px;
+    height: 20px;
+    display: block;
+    float: left;
+}
+
+.contact img{  
+    height: 20px;
+    width: 20px;
+    margin-left: 80%;
+    z-index: 1000;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.contact img:hover, .contact_menu img:hover{
+    transform: translateX(10px);
+}
+
+.img_menu{
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    width: 28px;
+    z-index: 10000;
+}
+
+.navbar{
+    position: fixed;
+    display: none;
+    z-index: 10000;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.001ms;
+}
+.icon_bar{
+    position: absolute;
+    top: 53px;
+    left: 3%;
+    height: 43px;
+    transform: scale(0.85);
+}
+.img_menu_close{
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+.menu_list{
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    margin-top: ease-in-out;
+}
+.link_menu{
+    display: inline-block;
+    color: black;
+    font-size: 27pt;
+    font-weight: bold;
+    transition: 0.1s;
+    line-height: 28px;
+    margin-top: 35px;
+    letter-spacing: 0.05em;
+    vertical-align: top;
+}
+.link_menu:hover{
+    letter-spacing: 0.125em;
+    color: rgb(187, 15, 15);
+}
+
+#open_btn{
+    cursor: pointer;
+}
+
+.contact_menu{
+    position: absolute;
+    bottom: 40px;
+    left: -2%;
+    z-index: 100;
+}
+
+.contact_menu li{
+    width: 50px;
+    height: 20px;
+    display: block;
+    float: left;
+}
+
+.contact_menu img{
+    height: 20px;
+    width: 20px;
+    margin-left: 80%;
+    z-index: 1000;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+
+.copyright_menu{
+    position: absolute;
+    width: 100%;
+    bottom: 45px;
+    right: 3%;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    z-index: 100;
+}
+.schedule{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    z-index: 111;
+    overflow: hidden;
+    padding: 0 50px;
+}
+.schedule_left{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    padding-right: 5%;
+}
+.schedule_title{
+    width: 100%;
+    text-align: left;
+    padding-bottom: 80px;
+    border-bottom: 1px solid black;
+    font-size: 40pt;
+    letter-spacing: 0.05em;
+}
+.schedule_data{
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+}
+.detail{
+    width: 100%;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin-left: -40px;
+    font-size: 11pt;
+    font-weight: lighter;
+}
+.date{
+    font-size: 9pt;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.tv, .mag, .rad, .con, .etc{
+    color: white;
+    text-align: center;
+    font-size: 7pt;
+    padding: 2px 5px 2px 5px;
+    border-radius: 100%;
+    margin-right: 6px;
+}
+.tv{
+    background-color: #f596c3;
+}
+.rad{
+    background-color: rgb(142, 212, 37);
+}
+.mag{
+    background-color: rgb(250, 160, 160);
+}
+.con{
+    background-color: rgb(15, 182, 168);
+}
+.etc{
+    background-color: rgb(240, 181, 71);
+}
+.change{
+    position: relative;
+    text-align: center;
+    float: right;
+    margin-top: 50px;
+}
+.btn-left, .btn-right{
+    display:inline-block;
+    cursor:pointer;
+    border:none;
+}
+.page{
+    display:inline-block;
+    margin: 100px 30px 0px 30px;
+}
+.schedule_right{
+    position: relative;
+    display: inline-block;
+    width: 55%;
+    height: auto;
+    padding-left: 4%;
+}
+.selected_year{
+    position: relative;
+    width: 110px;
+    z-index: 101;
+}
+.selected_year label{
+    position: absolute;
+    font-size: 13pt;
+}
+#selected_year{
+    width: 100px;
+    opacity: 0;
+}
+.month{
+    padding-top: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 10pt;
+    font-weight: lighter;
+}
+.month p{
+    display: inline-block;
+    margin-right: 12px;
+}
+.month a{
+    color: #969595;
+    text-decoration: none;
+}
+.week th{
+    padding: 16px 16px 16px 16px;
+    text-align: center;
+    width: 14px;
+    font-size: 14pt;
+}
+.day td{
+    text-align: center;
+    padding: 25px 20px 20px 20px;
+}
+#event_icon{
+    margin-top: 50px;
+    padding-left: 38%;
+}
+.event_icon{
+    position: relative;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+    color: #8a8989;
+    font-size: 8pt;
+}
+.event_itzy{
+    background-color: #d64827;
+    padding-top: 2px;
+    width: 31px;
+    height: 30px;
+    opacity: 0.5;
+    text-align: center;
+    border-radius: 100%;
+}
+.event_itzy a{
+    color: white;
+    text-decoration: none;
+}
+.month_event{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.month_event a{
+    color: black;
+}
+.contact li{
+    transition: 0.5s;
+}
+.contact li:hover  ~ li{
+    transform: translateX(10px);
+}
+.contact_menu li{
+    transition: 0.5s;
+}
+.contact_menu li:hover  ~ li{
+    transform: translateX(10px);
+}

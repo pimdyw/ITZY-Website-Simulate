@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Open+Sans&family=Roboto:wght@500&display=swap');
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    overflow-anchor: none;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    top:0px;
+    background-color: transparent;
+    height: 120px;
+    z-index: 100;
+    background-color: white;
+}
+
+#icon{
+    display: inline-block;
+    margin-top: 48px;
+    margin-left:52px; 
+    transform: scale(0.85);
+}
+
+.copyright{
+    position: absolute;
+    width: 100%;
+    bottom: 45px;
+    right: 3%;
+    text-align: right;
+    color: white;
+    font-size: 10px;
+    z-index: 100;
+}
+.contact{
+    position: fixed;
+    bottom: 40px;
+    left: -2%;
+    z-index: 100;
+}
+.contact li{
+    width: 50px;
+    height: 20px;
+    display: block;
+    float: left;
+    transition: 0.5s;
+}
+
+.contact img{  
+    height: 20px;
+    width: 20px;
+    margin-left: 80%;
+    z-index: 1000;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.contact li:hover{
+    transform: translateX(10px);
+}
+.contact li:hover  ~ li{
+    transform: translateX(10px);
+}
+
+.img_menu{
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    width: 28px;
+    z-index: 10000;
+}
+.navbar{
+    position: fixed;
+    display: none;
+    z-index: 10000;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.001ms;
+    top: 0%;
+}
+.icon_bar{
+    position: absolute;
+    top: 53px;
+    left: 3%;
+    height: 43px;
+}
+.img_menu_close{
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+.menu_list{
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    margin-top: ease-in-out;
+}
+.link_menu{
+    display: inline-block;
+    color: black;
+    font-size: 27pt;
+    font-weight: bold;
+    transition: 0.1s;
+    line-height: 28px;
+    margin-top: 35px;
+    letter-spacing: 0.05em;
+    vertical-align: top;
+}
+.link_menu:hover{
+    letter-spacing: 0.125em;
+    color: rgb(187, 15, 15);
+}
+.right-line{
+    position: fixed;
+    width: 356px;
+    top: 400px;
+    text-align: center;
+    right: -75px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #333;
+    transform: rotate(90deg);
+    z-index: -10;
+    font-weight: bold;
+}
+.line{
+    display: inline-block;
+    border: 1px solid black;
+    width: 140px;
+    margin: 0 20px;
+}
+.container{
+    margin-top: 10%;
+    animation: openslide 1s;
+    transition: 0.5s;
+}
+h1{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 55px;
+    font-weight: 900;
+}
+.row{
+    margin-top: 100px;
+}
+.row1{
+    display: flex;
+    margin-top: 120px;
+}
+.row2{
+    display: flex;
+    margin-top: 10px;
+}
+.row3{
+    display: flex;
+    margin-top: 10px;
+}
+.main-video iframe{
+    width: 1100px;
+    height: 619px;
+    margin-top: 10px;
+    
+}
+.vid-selected{
+    position: relative;
+    margin: 0 1px 0 10px;
+}
+
+.cover img{
+    width: 455px;
+    height: 455px;
+    z-index: 10;
+}
+.imgcon img{
+    width: 264px;
+    height: 264px;
+    z-index: 10;
+}
+.imgcon{
+    background: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.imgcon img:hover {
+    transition: 0.5s;
+    opacity: 0.1;
+    display: block;
+}
+.texthov p{
+    opacity: 1;
+    pointer-events: none;
+    font-size: 18px;
+    color: white;
+    line-height: 1.5em;
+    text-align: center;
+    position: relative;
+}
+.texthov{
+    position: absolute;
+}
+.vid-selected p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.release{
+    margin-top: 20px;
+}
+.vid-selected span{
+    position: absolute;
+    z-index: 1;
+    top: 367px;
+    right: 0;
+    font-weight: 400;
+    font-size: 13px;
+    color: #484848;
+}
+.change{
+    text-align: center;
+    transform: scale(0.5);
+    margin-top: 37px;
+}
+.btn-left, .btn-right{
+    display:inline-block;
+    position: relative;
+    top: -10px;
+    cursor:pointer;
+    border:none;
+}
+.page{
+    display:inline-block;
+    font-size: 200%;
+    margin: 0px 67px 0px 67px;
+}
+.copyright2{
+    position: relative;
+    width: 100%;
+    bottom: 45px;
+    right: 3%;
+    text-align: right;
+    color: black;
+    font-size: 10px;
+    z-index: 100;
+}
+.contact2{
+    position: relative;
+    margin-top: 10%;
+    bottom: 40px;
+    left: -2%;
+    z-index: 100;
+}
+.contact2 li{
+    width: 50px;
+    height: 20px;
+    display: block;
+    float: left;
+    transition: 0.5s;
+}
+.contact2 img{  
+    height: 20px;
+    width: 20px;
+    margin-left: 80%;
+    z-index: 1000;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.contact2 li:hover{
+    transform: translateX(10px);
+}
+.contact2 li:hover  ~ li{
+    transform: translateX(10px);
+}
+.release{
+    margin-top: 50px;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 40px;
+}
+.text-release{
+    display: block;
+    position: relative;
+    font-size: 12pt;
+    margin-left: 1%;
+}
+.link-notice{
+    display: block;
+    position: relative;
+    font-size: 12pt;
+}
+.data{
+    margin-left: 3%;
+    width: 600px;
+    height: auto;
+}
+.lan{
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 225px;
+    display: block;
+    float:right;
+    list-style: none;
+}
+.lan li{
+    color: #BBB;
+    display: inline-block;
+    font-weight: bold;
+    float: right;
+    margin: 0 5px;
+}
+.lan li a{
+    color: #BBB;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.title{
+    margin-bottom: 50px;
+}
+.header{
+    padding-bottom: 50px;
+    font-size: 11pt;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.main{
+    padding-bottom: 50px;
+}
+
+.list{
+    font-size: 12pt;
+    font-weight: bold;
+}
+a{
+    cursor: pointer;
+}
+.more{
+    display: none;
+    padding-bottom: 50px;
+}
+@keyframes openslide {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

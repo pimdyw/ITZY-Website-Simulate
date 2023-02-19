@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>ITZY : Schedule</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div id="header">
+        <div id="icon">
+            <a href="/project/g05itzy/index.html">
+                <img src="icon.png">
+                </img>
+            </a>
+        </div>
+        <div class="menu">
+            <div id="open_btn" onclick="OpenNav()" type="button">
+                <img class="img_menu" src="menu_b.png">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar" id="navbar" style="height: 100%">
+        <div class="icon_bar">
+            <a href="/project/g05itzy/index.html">
+                <image src="icon.png">
+                </image>
+            </a>
+        </div>
+        <div onclick="OpenNav()" type="button">
+            <img class="img_menu_close" src="btn_siteMenu_close.png">
+        </div>
+        <div class="menu_list">
+            <a class="link_menu" href="/project/g05itzy/profile_itzy/profile.html" style="text-decoration: none;">PROFILE</a>
+            <a class="link_menu" href="/project/g05itzy/Discography/P1.html" style="text-decoration: none;">DISCOGRAPHY</a>
+            <a class="link_menu" href="/" style="text-decoration: none;">GALLERY</a>
+            <a class="link_menu" href="/project/g05itzy/Video/Video0.html" style="text-decoration: none;">VIDEO</a>
+            <a class="link_menu" href="/project/g05itzy/Notice/Notice.html" style="text-decoration: none;">NOTICE</a>
+            <a class="link_menu" href="/project/g05itzy/schedule/index.html" style="text-decoration: none;">SCHEDULE</a>
+        </div>
+        <footer>
+            <ul class="contact_menu">
+                <li>
+                    <img alt="ig" src="sns_instagram_b.png">
+                </li>
+                <li>
+                    <img alt="twitter" src="sns_twitter_b.png">
+                </li>
+                <li>
+                    <img alt="facebook" src="sns_facebook_b.png">
+                </li>
+                <li>
+                    <img alt="youtube" src="sns_youtube_b.png">
+                </li>
+                <li>
+                    <img alt="vlive" src="sns_vlive_b.png">
+                </li>
+                <li>
+                    <img alt="weibo" src="sns_weibo_b.png">
+                </li>
+                <li>
+                    <img alt="fans" src="sns_fans_b.png">
+                </li>
+                <li>
+                    <img alt="edm" src="sns_edm_b.png">
+                </li>
+            </ul>
+            <p class="copyright_menu" style="color: black;">
+                Copyright ©
+                <span style="color: #009be6;">JYP</span>
+                ENTERTAINMENT Co., Ltd. All rights reserved.
+            </p>
+        </footer>
+    </nav>
+
+    <div class="right-line">
+        06
+        <div class="line"></div>
+        SCHEDULE
+    </div>
+    <div class="container">
+        <div class="schedule">
+            <div class="schedule_left" style="min-height: 612px;">
+                <div class="schedule_title">
+                    SCHEDULE
+                </div>
+                <div class="schedule_data" id="data">
+                    <ul class="detail">
+                        <li class="date">3 &nbsp; SUN</li>
+                        <li><span class="tv">T</span>SBS 인기가요</li>
+                    </ul>
+                    <ul class="detail">
+                        <li class="date">5 &nbsp; TUE</li>
+                        <li><span class="rad">R</span>SBS 파워FM 박소현의 러브게임</li>
+                    </ul>
+                    <ul class="detail">
+                        <li class="date">6 &nbsp; WED</li>
+                        <li><span class="rad">R</span>KBS Cool FM 정은지의 가요광장</li>
+                    </ul>
+                    <ul class="detail">
+                        <li class="date">7 &nbsp; THU</li>
+                        <li><span class="rad">R</span>SBS 파워FM 두시탈출 컬투쇼</li>
+                    </ul>
+                    <ul class="detail">
+                        <li class="date">7 &nbsp; THU</li>
+                        <li><span class="tv">T</span>Mnet 엠카운트다운</li>
+                    </ul>
+                </div>
+                <div class="change" id="change">
+                    <div class="btn-left" onclick="location.href='index.html'">
+                        <img style="width: 11px; height: 21px;" src="bg-btn-prev.png">
+                    </div>
+                    <div class="page">
+                        <p>
+                            2 / 5
+                        </p>
+                    </div>
+                    <div class="btn-right" onclick="location.href='scd_3.html'">
+                        <img style="width: 11px; height: 21px;" src="bg-btn-next.png">
+                    </div>
+                </div>
+            </div>
+            <div class="schedule_right" style="min-height: 651px;">
+                <div class="selected_year">
+                    <label for="seletected_year">2021</label>
+                    <select id="selected_year">
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                    </select>
+                    <img style="width:6px; height:4px; position: relative; left: -40px;"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Black_triangle.svg/1152px-Black_triangle.svg.png">
+                </div>
+                <div class="month">
+                    <p id="1" class=""><a href="javascript:changeMonth('01')">JAN</a></p>
+                    <p id="2" class=""><a href="javascript:changeMonth('02')">FEB</a></p>
+                    <p id="3" class=""><a href="javascript:changeMonth('03')">MAR</a></p>
+                    <p id="4" class=""><a href="javascript:changeMonth('04')">APR</a></p>
+                    <p id="5" class=""><a href="javascript:changeMonth('05')">MAY</a></p>
+                    <p id="6" class=""><a href="javascript:changeMonth('06')">JUN</a></p>
+                    <p id="7" class=""><a href="javascript:changeMonth('07')">JUL</a></p>
+                    <p id="8" class=""><a href="javascript:changeMonth('08')">AUG</a></p>
+                    <p id="9" class=""><a href="javascript:changeMonth('09')">SEP</a></p>
+                    <p id="10" class="month_event"><a href="scd_2.html">OCT</a></p>
+                    <p id="11" class=""><a href="javascript:changeMonth('11')">NOV</a></p>
+                    <p id="12" class=""><a href="javascript:changeMonth('12')">DEC</a></p>
+                </div>
+                <table class="calender" id="calender">
+                    <tbody>
+                        <tr class="week">
+                            <th class="sun">SUN</th>
+                            <th class="mon">MON</th>
+                            <th class="tue">TUE</th>
+                            <th class="wed">WED</th>
+                            <th class="thu">THU</th>
+                            <th class="fri">FRI</th>
+                            <th class="sat">SAT</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="day" id="week1">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('1')">1</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('2')">2</a></div>
+                            </td>
+                        </tr>
+                        <tr class="day" id="week2">
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('3')">3</a></div>
+                            </td>
+                            <td>4</td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('5')">5</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('6')">6</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('7')">7</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('8')">8</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('9')">9</a></div>
+                            </td>
+                        </tr>
+                        <tr class="day" id="week3">
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('10')">10</a></div>
+                            </td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('14')">14</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('15')">15</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('16')">16</a></div>
+                            </td>
+                        </tr>
+                        <tr class="day" id="week4">
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('17')">17</a></div>
+                            </td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                        </tr>
+                        <tr class="day" id="week5">
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('24')">24</a></div>
+                            </td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('29')">29</a></div>
+                            </td>
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('30')">30</a></div>
+                            </td>
+                        </tr>
+                        <tr class="day" id="week6">
+                            <td>
+                                <div class="event_itzy"><a href="javascript:event('31')">31</a></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="event">
+                    <ul class="detail" id="event_icon">
+                        <li class="event_icon"><span class="tv">T</span>TV</li>
+                        <li class="event_icon"><span class="mag">M</span>Magzine</li>
+                        <li class="event_icon"><span class="rad">R</span>Radio</li>
+                        <li class="event_icon"><span class="con">C</span>Concert</li>
+                        <li class="event_icon"><span class="etc">E</span>ETC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="contact">
+            <li>
+                <img alt="ig" src="sns_instagram_b.png">
+            </li>
+            <li>
+                <img alt="twitter" src="sns_twitter_b.png">
+            </li>
+            <li>
+                <img alt="facebook" src="sns_facebook_b.png">
+            </li>
+            <li>
+                <img alt="youtube" src="sns_youtube_b.png">
+            </li>
+            <li>
+                <img alt="vlive" src="sns_vlive_b.png">
+            </li>
+            <li>
+                <img alt="weibo" src="sns_weibo_b.png">
+            </li>
+            <li>
+                <img alt="fans" src="sns_fans_b.png">
+            </li>
+            <li>
+                <img alt="edm" src="sns_edm_b.png">
+        </ul>
+        <p class="copyright">
+            Copyright ©
+            <span style="color: #009be6;">JYP</span>
+            ENTERTAINMENT Co., Ltd. All rights reserved.
+        </p>
+    </footer>
+</body>
+<script src="changemonth.js"></script>
+<script src="changeevent.js"></script>
+<script src="navbar.js"></script>
+
+</html>
